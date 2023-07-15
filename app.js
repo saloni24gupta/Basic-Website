@@ -14,7 +14,7 @@ const square = document.getElementsByClassName("square")
 for (let SQUARE of square) {
     SQUARE.src = "https://media.istockphoto.com/id/1399292810/photo/group-of-wildlife-animals-in-the-jungle-together.jpg?s=1024x1024&w=is&k=20&c=eVXWL8BnyaG5f210DZ_cSWiDD0NO4SkaKNdIX4mlAeQ=";
 }
-tag[0].innerText = "Saloni";
+tag[0].innerText = "Saloni";;
 
 // tag.innerText = "saloni gupta";
 // for (let link of allLinks) {
