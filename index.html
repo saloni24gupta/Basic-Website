@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"
+        integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href=" https://fontawesome.com/icons/list-dropdown?f=classic&s=regular">
 </head>
 
 <body>
+
     <h1 id="song">Silkie Chickens</h1>
+
+    <i class="fa-duotone fa-square-chevron-down"></i>
+    <p id="demo"></p>
     <img id="banner"
         src="https://images.unsplash.com/photo-1563281577-a7be47e20db9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
         alt="">
@@ -26,6 +37,11 @@
         broody nature. Silkie chickens are very easy to keep as pets. They are suitable for children, but like any pet,
         should be handled with care.
     </p>
+
+
+
+
+
 
     <div id="toc" role="navigation" aria-labelledby="mw-toc-heading">
         <input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" />
@@ -81,6 +97,38 @@
         alt="">
 
     <input type="text">
+    <!-- //create accordian -->
+    <div class="accordian">
+        <div class="accordian one margin">
+            <h4 class="two margin">create accordian </h4>
+            <button class="btn icon "><i class="fa-solid fa-caret-down"></i></button>
+            <p class="three margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia magni incidunt
+                dolores, ab tempore
+                sit, mollitia dolorum, a obcaecati iusto. Velit aliquid obcaecati, atque vitae nesciunt, voluptas
+                accusantium molestias sed quo impedit fugit in quasi iure earum sit temporibus!</p>
+        </div>
+        <div class="accordian one margin">
+            <h4 class="two margin">create accordian </h4>
+            <button class="btn icon  "><i class="fa-solid fa-caret-down"></i></button>
+            <p class="three margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia magni incidunt
+                dolores, ab tempore
+                sit, mollitia dolorum, a obcaecati iusto. Velit aliquid obcaecati, atque vitae nesciunt, voluptas
+                accusantium molestias sed quo impedit fugit in quasi iure earum sit temporibus!</p>
+        </div>
+        <div class="accordian one margin">
+            <h4 class="two margin">create accordian </h4>
+            <button class="btn icon "><i class="fa-solid fa-caret-down"></i></button>
+            <div class="main">
+            <p class="three margin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quia magni incidunt
+                dolores, ab tempore
+                sit, mollitia dolorum, a obcaecati iusto. Velit aliquid obcaecati, atque vitae nesciunt, voluptas
+                accusantium molestias sed quo impedit fugit in quasi iure earum sit temporibus!</p>
+            </div>
+            </div>
+
+       
+    </div>
+    <div id="container"></div>
 
     <script src="app.js"></script>
 </body>
