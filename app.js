@@ -110,7 +110,7 @@ function returnDay(num) {
   }
 }
 
-// method 1
+//jkjhjhj method 1
 function sumofarray(nums){
     let sum =0;
     for(let i=0; i<nums.length; i++){
