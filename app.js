@@ -1,8 +1,54 @@
+const obj = {
+  property1: value1, // property name may be an identifier
+  2: value2, // or a number
+  "property n": value3, // or a string
+};
+
+
+
+
+
+function countSelected(selectObject) {
+  let numberSelected = 0;
+  for (let i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+  const musicTypes = document.selectForm.musicTypes;
+  console.log(`You have selected ${countSelected(musicTypes)} option(s).`);
+});
+
+
+
 fruits[5] = "mango";
 console.log(fruits[5]); // 'mango'
 console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
 console.log(fruits.length); // 6
+const b = new Array(4);
+for (let i = 0; i < 4; i++) {
+  b[i] = new Array(4);
+  for (let j = 0; j < 4; j++) {
+    b[i][j] = `[${i}, ${j}]`;
+  }
+}
 
+
+
+let a = []
+for(let i=0; i<4;i++)
+{
+  a[i] = [];
+  for(let j=0;i<4;j++){
+   a[i][j] = `[a${i},${j}]`;
+  }
+}
 // SOLUTION #1:
 
 function returnDay(num) {
@@ -234,21 +280,21 @@ for (let link of alllinks) {
 
 // });
 
-BTN.addEventListener('click', () =>  {
-    BTN.classList.toggle("icon");
-})  
-const BTNs = document.querySelector("button");
-BTNs.addEventListener('click', () =>  {
-    BTNs.classList.toggle("icon");
-})
-const BTNs = document.querySelector("button");
-BTNs.addEventListener('click', () =>  {
-    BTNs.classList.toggle("icons");
-})
-setting classlist
+// BTN.addEventListener('click', () =>  {
+//     BTN.classList.toggle("icon");
+// })  
+// const BTNs = document.querySelector("button");
+// BTNs.addEventListener('click', () =>  {
+//     BTNs.classList.toggle("icon");
+// })
+// const BTNs = document.querySelector("button");
+// BTNs.addEventListener('click', () =>  {
+//     BTNs.classList.toggle("icons");
+// })
+// setting classlist
 
-const h2 = document.querySelector("h2");
-h2.setAttribute("class", "purple border bcolor");
+// const h2 = document.querySelector("h2");
+// h2.setAttribute("class", "purple border bcolor");
 
 
 
