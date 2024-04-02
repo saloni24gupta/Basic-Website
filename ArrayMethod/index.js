@@ -26,6 +26,51 @@ for(let i in PG_marks){
     console.log(PG_marks[i])
 }
 
-for(let i of PG_marks){
-    console.log(PG_marks[i])
-}
+//DAY2 #17
+//ARRAY METHOD
+// 1> toString()> converts an array to a string of comma seperated value
+let n = [1, 7, 9]
+let a = n.toString()
+console.log(n) /*(3) [1, 7, 9]*/
+console.log(a) /* 1,7,9 */
+console.log (typeof n) /*(3) [1, 7, 9] object*/
+console.log(typeof a) /* 1,7,9  string*/ 
+n[0] = 10
+console.log(n)
+console.log(a[0])
+a[0] = 14
+console.log(a)
+
+let num = [1, 2, 4, 5, 65]
+let b= num.toString()
+console.log(b)
+
+// 2>join()
+let num1 = [1, 2, 4, 5, 65]
+let c = num1.join("_")
+console.log(typeof c) /* return string */
+
+// 3. pop() => updates the original array returns the popped value
+let popValue = [1, 2, 4, 7, 9]
+// console.log(popValue) 
+let retrunVal = popValue.pop()
+console.log(popValue)
+console.log(retrunVal) //return poped element //9
+
+// 4. push() => after a new element at the end of the array
+let pushValue = [7, 1, 2, 8] //modifed the oirginal array return new array length
+let valuepush = pushValue.push(86)  // it return the new lenth of the array
+console.log("push value is" + pushValue)
+console.log("pushed etrun value" + " " + valuepush)
+
+//5. shift() => Removes first element and retrun it
+
+let shiftValue = [1, 2, 4,5,7]
+let returnshift = shiftValue.shift()
+console.log(shiftValue) // new shidtvalue is:  (4) [2, 4, 5, 7]
+console.log(returnshift) //1
+//.6> unshift() => Adds element to the begining Returns new array length
+let unshiftValue = [1, 2, 4,5,7]
+let returnunshift = unshiftValue.unshift(8)
+console.log(unshiftValue) // new shiftvalue is: (6) [8, 1, 2, 4, 5, 7]
+console.log(returnunshift) //return new array length
